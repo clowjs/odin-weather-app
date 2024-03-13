@@ -56,3 +56,8 @@ span {
   align-items: center;
   gap: 1rem;
 }
+
+#conditionImage {
+  max-height: 300px;
+  border-radius: 8px;
+}

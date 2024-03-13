@@ -16,10 +16,8 @@ export async function fetchWeather(query) {
       description: data.current.condition.text,
     };
   } catch (error) {
-    console.error('Error fetching weather data', error);
+    throw new Error('Error fetching weather', error);
   }
-
-  return null;
 }
 
 export async function fetchImage(query) {
@@ -31,11 +29,8 @@ export async function fetchImage(query) {
 
     const data = await response.json();
 
-    console.log('image fetched!');
     return data.data.images.original.url;
   } catch (error) {
-    console.error('error fetching image', error);
+    throw new Error('Error fetching image', error);
   }
-
-  return null;
 }
