@@ -9,7 +9,17 @@
     <header>
       <h1>Weather App</h1>
     </header>
-    <div class="container"></div>
+    <div class="container-fetch">
+      <input type="text" placeholder="Location..." />
+      <button type="button">Get Weather</button>
+    </div>
+
+    <div class="container-result">
+      <h1 id="city">New York</h1>
+      <span id="temps">32º C / 80º F</span>
+      <img src="#" alt="weather icon" id="icon" />
+      <p id="description">Clear Sky</p>
+    </div>
 
     <script src="./index.js" defer></script>
   </body>
